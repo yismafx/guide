@@ -1,69 +1,64 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slide 6</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            padding: 60px;
-            margin: 0;
-        }
-        h1 {
-            color: #764ba2;
-            font-size: 42px;
-            margin-bottom: 30px;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 30px;
-            font-size: 22px;
-        }
-        th {
-            background-color: #667eea;
-            color: white;
-            padding: 20px;
-            text-align: left;
-        }
-        td {
-            padding: 20px;
-            border-bottom: 1px solid #ddd;
-        }
-        tr:hover {
-            background-color: #f5f5f5;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-neutral: #6B7280;
+  --color-dark: #1E293B;
+  --color-light: #F1F5F9;
+  --color-white: #FFFFFF;
+  --font-primary: Arial, sans-serif;
+  --size-xl: 48px;
+  --size-lg: 36px;
+  --size-md: 24px;
+  --size-sm: 18px;
+  --size-xs: 14px;
+  --space-xl: 60px;
+  --space-lg: 40px;
+  --space-md: 24px;
+  --space-sm: 16px;
+  --space-xs: 8px;
+}
+  </style>
 </head>
-<body>
-    <h1>Herramientas Principales</h1>
-    <table>
-        <tr>
-            <th>Herramienta</th>
-            <th>Uso</th>
-        </tr>
-        <tr>
-            <td><strong>Python</strong></td>
-            <td>Lenguaje de programación principal</td>
-        </tr>
-        <tr>
-            <td><strong>Pandas</strong></td>
-            <td>Análisis y manipulación de datos</td>
-        </tr>
-        <tr>
-            <td><strong>NumPy</strong></td>
-            <td>Cálculos numéricos</td>
-        </tr>
-        <tr>
-            <td><strong>TensorFlow/PyTorch</strong></td>
-            <td>Modelos de IA</td>
-        </tr>
-        <tr>
-            <td><strong>APIs de mercado</strong></td>
-            <td>Datos en tiempo real</td>
-        </tr>
-    </table>
+<body style="width: 960px; height: 540px; margin: 0; padding: var(--space-lg); background: var(--color-white); font-family: var(--font-primary);">
+  <h1 style="font-size: var(--size-lg); color: var(--color-secondary); margin: 0 0 var(--space-md) 0; font-weight: bold;">⚙️ FASE 3: OPTIMIZACIÓN</h1>
+  
+  <div style="background: #EDE9FE; padding: var(--space-sm); border-radius: 8px; margin-bottom: var(--space-sm); border-left: 4px solid var(--color-secondary);">
+    <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0;"><b>Trading Manual:</b> "Ajusto mi método basándome en experiencia"</p>
+    <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b>Trading Algorítmico:</b> "Pruebo sistemáticamente diferentes parámetros"</p>
+  </div>
+
+  <h3 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold;">¿Qué ocurre aquí?</h3>
+  <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-sm) 0; padding-left: 20px;">
+    <li style="margin: var(--space-xs) 0;">Encontrar los mejores parámetros (ej: ¿RSI < 30 o < 25?)</li>
+    <li style="margin: var(--space-xs) 0;">Validar que no estamos "ajustando al pasado" (overfitting)</li>
+    <li style="margin: var(--space-xs) 0;">Walk-Forward Analysis: optimizar en un periodo, validar en otro</li>
+  </ul>
+
+  <h3 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold;">La Trampa del Overfitting:</h3>
+  <div class="row" style="display: flex; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+    <div style="flex: 1; background: #FEE2E2; padding: var(--space-sm); border-radius: 8px;">
+      <p style="font-size: var(--size-xs); color: var(--color-danger); margin: 0; font-weight: bold;">✗ MALO</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Probar 1000 combinaciones → encontrar la "perfecta" en el pasado</p>
+    </div>
+    <div style="flex: 1; background: #D1FAE5; padding: var(--space-sm); border-radius: 8px;">
+      <p style="font-size: var(--size-xs); color: var(--color-success); margin: 0; font-weight: bold;">✓ BUENO</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Probar rangos razonables → validar en datos nuevos (out-of-sample)</p>
+    </div>
+  </div>
+
+  <div style="background: var(--color-light); padding: var(--space-sm); border-radius: 8px; margin-bottom: var(--space-xs);">
+    <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0; font-style: italic;">"Si torturas los datos lo suficiente, confesarán cualquier cosa"</p>
+    <p style="font-size: var(--size-xs); color: var(--color-neutral); margin: var(--space-xs) 0;">— Ronald Coase (Premio Nobel)</p>
+  </div>
+
+  <p style="font-size: var(--size-xs); color: var(--color-neutral); margin: 0;"><b>Herramientas:</b> 🔧 Python (Grid Search), MetaTrader (Optimizer)</p>
 </body>
 </html>
