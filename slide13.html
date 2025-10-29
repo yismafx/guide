@@ -1,82 +1,58 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slide 13</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            padding: 60px;
-            margin: 0;
-        }
-        h1 {
-            color: #764ba2;
-            font-size: 42px;
-            margin-bottom: 30px;
-        }
-        .resources {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .resource-card {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            border-top: 4px solid #667eea;
-        }
-        .resource-card h3 {
-            color: #667eea;
-            margin-top: 0;
-            font-size: 28px;
-        }
-        .resource-card ul {
-            font-size: 22px;
-            line-height: 1.6;
-            padding-left: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-neutral: #6B7280;
+  --color-dark: #1E293B;
+  --color-light: #F1F5F9;
+  --color-white: #FFFFFF;
+  --font-primary: Arial, sans-serif;
+  --size-xl: 48px;
+  --size-lg: 36px;
+  --size-md: 24px;
+  --size-sm: 18px;
+  --size-xs: 14px;
+  --space-xl: 60px;
+  --space-lg: 40px;
+  --space-md: 24px;
+  --space-sm: 16px;
+  --space-xs: 8px;
+}
+  </style>
 </head>
-<body>
-    <h1>Recursos Recomendados</h1>
-    <div class="resources">
-        <div class="resource-card">
-            <h3>📚 Libros</h3>
-            <ul>
-                <li>Algorithmic Trading by Ernest Chan</li>
-                <li>Python for Finance by Yves Hilpisch</li>
-                <li>Advances in Financial ML by Marcos López de Prado</li>
-            </ul>
-        </div>
-        <div class="resource-card">
-            <h3>🌐 Plataformas</h3>
-            <ul>
-                <li>QuantConnect</li>
-                <li>Alpaca</li>
-                <li>Interactive Brokers API</li>
-                <li>Binance API</li>
-            </ul>
-        </div>
-        <div class="resource-card">
-            <h3>📊 Datos</h3>
-            <ul>
-                <li>Yahoo Finance</li>
-                <li>Alpha Vantage</li>
-                <li>Quandl</li>
-                <li>CryptoCompare</li>
-            </ul>
-        </div>
-        <div class="resource-card">
-            <h3>🎓 Comunidades</h3>
-            <ul>
-                <li>QuantConnect Forums</li>
-                <li>r/algotrading</li>
-                <li>Stack Exchange - Quantitative Finance</li>
-            </ul>
-        </div>
+<body style="width: 960px; height: 540px; margin: 0; padding: var(--space-lg); background: var(--color-white); font-family: var(--font-primary);">
+  <h1 style="font-size: var(--size-xl); color: var(--color-primary); margin: 0 0 var(--space-md) 0; font-weight: bold; text-align: center;">EXPECTATIVAS REALISTAS</h1>
+  
+  <div class="row" style="display: flex; gap: var(--space-md); margin-bottom: var(--space-md);">
+    <div style="flex: 1; background: linear-gradient(180deg, #D1FAE5 0%, #6EE7B7 100%); padding: var(--space-md); border-radius: 12px; border: 3px solid var(--color-success);">
+      <h2 style="font-size: var(--size-md); color: var(--color-dark); margin: 0 0 var(--space-sm) 0; font-weight: bold; text-align: center;">✅ LO QUE SÍ PUEDES ESPERAR</h2>
+      <ul style="font-size: var(--size-sm); color: var(--color-dark); margin: 0; padding-left: 20px; line-height: 1.6;">
+        <li style="margin: var(--space-sm) 0;">Conocimiento profesional de trading algorítmico</li>
+        <li style="margin: var(--space-sm) 0;">Habilidad para desarrollar estrategias con ayuda de IA</li>
+        <li style="margin: var(--space-sm) 0;">Sistema completo funcionando en paper trading</li>
+      </ul>
     </div>
+    
+    <div style="flex: 1; background: linear-gradient(180deg, #FEE2E2 0%, #FCA5A5 100%); padding: var(--space-md); border-radius: 12px; border: 3px solid var(--color-danger);">
+      <h2 style="font-size: var(--size-md); color: var(--color-dark); margin: 0 0 var(--space-sm) 0; font-weight: bold; text-align: center;">❌ LO QUE NO PUEDES ESPERAR</h2>
+      <ul style="font-size: var(--size-sm); color: var(--color-dark); margin: 0; padding-left: 20px; line-height: 1.6;">
+        <li style="margin: var(--space-sm) 0;">"Máquina de dinero" garantizada</li>
+        <li style="margin: var(--space-sm) 0;">Estrategias que funcionan para siempre sin ajustes</li>
+        <li style="margin: var(--space-sm) 0;">Evitar todas las pérdidas (drawdowns son inevitables)</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(90deg, var(--color-warning) 0%, #FCD34D 100%); padding: var(--space-md); border-radius: 12px; text-align: center;">
+    <p style="font-size: var(--size-sm); color: var(--color-dark); margin: 0; font-weight: bold;">⚠️ DISCLAIMER LEGAL</p>
+    <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0; line-height: 1.5;">Este workshop es educativo. El trading algorítmico conlleva riesgos. Los resultados pasados no garantizan resultados futuros. <b>Nunca operes con dinero que no puedas perder.</b></p>
+  </div>
 </body>
 </html>
