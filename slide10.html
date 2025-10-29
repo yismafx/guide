@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 10</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 60px;
+            margin: 0;
+        }
+        h1 {
+            font-size: 42px;
+            margin-bottom: 40px;
+        }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+        .metric {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            font-size: 22px;
+        }
+        .metric strong {
+            display: block;
+            font-size: 26px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Métricas de Performance</h1>
+    <div class="metrics">
+        <div class="metric">
+            <strong>Sharpe Ratio</strong>
+            Retorno ajustado por riesgo
+        </div>
+        <div class="metric">
+            <strong>Max Drawdown</strong>
+            Pérdida máxima desde un pico
+        </div>
+        <div class="metric">
+            <strong>Win Rate</strong>
+            Porcentaje de operaciones ganadoras
+        </div>
+        <div class="metric">
+            <strong>Profit Factor</strong>
+            Ganancias totales / Pérdidas totales
+        </div>
+        <div class="metric">
+            <strong>Alpha</strong>
+            Retorno excedente vs benchmark
+        </div>
+        <div class="metric">
+            <strong>Beta</strong>
+            Correlación con el mercado
+        </div>
+    </div>
+</body>
+</html>

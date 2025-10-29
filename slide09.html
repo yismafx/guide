@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Slide 9</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding: 60px;
+            margin: 0;
+        }
+        h1 {
+            color: #667eea;
+            font-size: 42px;
+            margin-bottom: 30px;
+        }
+        .content {
+            font-size: 26px;
+            line-height: 1.7;
+        }
+        .code-box {
+            background-color: #282c34;
+            color: #abb2bf;
+            padding: 30px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            font-size: 20px;
+            margin-top: 30px;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ejemplo: Estrategia Simple</h1>
+    <div class="content">
+        <p>Estrategia de cruces de medias móviles:</p>
+        <div class="code-box">
+# Compra cuando MA corta > MA larga<br>
+if short_ma > long_ma:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;signal = 'BUY'<br>
+<br>
+# Vende cuando MA corta < MA larga<br>
+elif short_ma < long_ma:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;signal = 'SELL'
+        </div>
+    </div>
+</body>
+</html>
