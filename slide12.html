@@ -1,87 +1,73 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slide 12</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 60px;
-            margin: 0;
-        }
-        h1 {
-            color: #667eea;
-            font-size: 42px;
-            margin-bottom: 30px;
-        }
-        .timeline {
-            position: relative;
-            padding-left: 40px;
-        }
-        .timeline:before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 0;
-            bottom: 0;
-            width: 4px;
-            background: #667eea;
-        }
-        .timeline-item {
-            position: relative;
-            padding-left: 40px;
-            margin-bottom: 40px;
-        }
-        .timeline-item:before {
-            content: '';
-            position: absolute;
-            left: -10px;
-            top: 5px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            background: #667eea;
-        }
-        .timeline-item h3 {
-            color: #764ba2;
-            font-size: 28px;
-            margin: 0 0 10px 0;
-        }
-        .timeline-item p {
-            font-size: 24px;
-            margin: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-neutral: #6B7280;
+  --color-dark: #1E293B;
+  --color-light: #F1F5F9;
+  --color-white: #FFFFFF;
+  --font-primary: Arial, sans-serif;
+  --size-xl: 48px;
+  --size-lg: 36px;
+  --size-md: 24px;
+  --size-sm: 18px;
+  --size-xs: 14px;
+  --space-xl: 60px;
+  --space-lg: 40px;
+  --space-md: 24px;
+  --space-sm: 16px;
+  --space-xs: 8px;
+}
+  </style>
 </head>
-<body>
-    <h1>Roadmap del Curso</h1>
-    <div class="timeline">
-        <div class="timeline-item">
-            <h3>Módulo 1</h3>
-            <p>Fundamentos de Python para Trading</p>
-        </div>
-        <div class="timeline-item">
-            <h3>Módulo 2</h3>
-            <p>Análisis Técnico y Datos Financieros</p>
-        </div>
-        <div class="timeline-item">
-            <h3>Módulo 3</h3>
-            <p>Desarrollo de Estrategias</p>
-        </div>
-        <div class="timeline-item">
-            <h3>Módulo 4</h3>
-            <p>Backtesting y Optimización</p>
-        </div>
-        <div class="timeline-item">
-            <h3>Módulo 5</h3>
-            <p>Integración de IA Generativa</p>
-        </div>
-        <div class="timeline-item">
-            <h3>Módulo 6</h3>
-            <p>Implementación en Producción</p>
-        </div>
+<body style="width: 960px; height: 540px; margin: 0; padding: var(--space-lg); background: var(--color-white); font-family: var(--font-primary);">
+  <h1 style="font-size: var(--size-lg); color: var(--color-primary); margin: 0 0 var(--space-md) 0; font-weight: bold;">¿QUÉ TE LLEVAS DEL WORKSHOP?</h1>
+  
+  <div class="row" style="display: flex; gap: var(--space-sm); margin-bottom: var(--space-sm);">
+    <div style="flex: 1; background: linear-gradient(180deg, #DBEAFE 0%, #93C5FD 100%); padding: var(--space-sm); border-radius: 12px;">
+      <h2 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold;">📦 STARTER KIT COMPLETO</h2>
+      <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: 0; padding-left: 20px;">
+        <li style="margin: var(--space-xs) 0;">Estrategia Mean Reversion en 3 lenguajes</li>
+        <li style="margin: var(--space-xs) 0;">Conexión con IB para paper trading</li>
+        <li style="margin: var(--space-xs) 0;">Dashboard de monitoreo en tiempo real</li>
+        <li style="margin: var(--space-xs) 0;">Sistema de alertas (Telegram/Email)</li>
+      </ul>
     </div>
+    
+    <div style="flex: 1; background: linear-gradient(180deg, #D1FAE5 0%, #6EE7B7 100%); padding: var(--space-sm); border-radius: 12px;">
+      <h2 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold;">🛠️ KIT MODULAR</h2>
+      <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: 0; padding-left: 20px;">
+        <li style="margin: var(--space-xs) 0;">3 estrategias adicionales (Momentum, Arbitraje, personalizada)</li>
+        <li style="margin: var(--space-xs) 0;">Módulos reutilizables (gestión riesgo, datos, sentimiento)</li>
+        <li style="margin: var(--space-xs) 0;">Biblioteca de 50+ prompts optimizados</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="background: linear-gradient(180deg, #EDE9FE 0%, #C4B5FD 100%); padding: var(--space-md); border-radius: 12px;">
+    <h2 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-sm) 0; font-weight: bold; text-align: center;">📚 CONOCIMIENTO</h2>
+    <div class="row" style="display: flex; gap: var(--space-md); justify-content: center;">
+      <div style="text-align: center;">
+        <p style="font-size: 32px; margin: 0;">📖</p>
+        <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Fundamentos teóricos sólidos</p>
+        <p style="font-size: var(--size-xs); color: var(--color-neutral); margin: 0;">(Chan, Carver, López de Prado)</p>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-size: 32px; margin: 0;">✅</p>
+        <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Checklist de validación y errores comunes</p>
+      </div>
+      <div style="text-align: center;">
+        <p style="font-size: 32px; margin: 0;">🎯</p>
+        <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Plan de acción personalizado post-workshop</p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
