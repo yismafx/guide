@@ -1,50 +1,81 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slide 9</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 60px;
-            margin: 0;
-        }
-        h1 {
-            color: #667eea;
-            font-size: 42px;
-            margin-bottom: 30px;
-        }
-        .content {
-            font-size: 26px;
-            line-height: 1.7;
-        }
-        .code-box {
-            background-color: #282c34;
-            color: #abb2bf;
-            padding: 30px;
-            border-radius: 8px;
-            font-family: 'Courier New', monospace;
-            font-size: 20px;
-            margin-top: 30px;
-            overflow-x: auto;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-neutral: #6B7280;
+  --color-dark: #1E293B;
+  --color-light: #F1F5F9;
+  --color-white: #FFFFFF;
+  --font-primary: Arial, sans-serif;
+  --size-xl: 48px;
+  --size-lg: 36px;
+  --size-md: 24px;
+  --size-sm: 18px;
+  --size-xs: 14px;
+  --space-xl: 60px;
+  --space-lg: 40px;
+  --space-md: 24px;
+  --space-sm: 16px;
+  --space-xs: 8px;
+}
+  </style>
 </head>
-<body>
-    <h1>Ejemplo: Estrategia Simple</h1>
-    <div class="content">
-        <p>Estrategia de cruces de medias móviles:</p>
-        <div class="code-box">
-# Compra cuando MA corta > MA larga<br>
-if short_ma > long_ma:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;signal = 'BUY'<br>
-<br>
-# Vende cuando MA corta < MA larga<br>
-elif short_ma < long_ma:<br>
-&nbsp;&nbsp;&nbsp;&nbsp;signal = 'SELL'
-        </div>
+<body style="width: 960px; height: 540px; margin: 0; padding: var(--space-lg); background: var(--color-white); font-family: var(--font-primary);">
+  <h1 style="font-size: var(--size-xl); color: var(--color-primary); margin: 0 0 var(--space-md) 0; font-weight: bold; text-align: center;">ECOSISTEMA DE HERRAMIENTAS</h1>
+  
+  <div class="row" style="display: flex; gap: var(--space-sm); height: 400px;">
+    <div style="flex: 1; background: linear-gradient(180deg, #DBEAFE 0%, #93C5FD 100%); padding: var(--space-sm); border-radius: 12px;">
+      <h2 style="font-size: var(--size-md); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold; text-align: center;">🎨 TRADINGVIEW</h2>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; text-align: center; font-style: italic;">Mesa de Diseño Visual</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-xs) 0;"><b>Mejor para:</b> FASE 1</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b>Funciones:</b></p>
+      <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: 0; padding-left: 20px;">
+        <li>Visualización avanzada</li>
+        <li>Prototipado (Pine Script)</li>
+        <li>Alertas tiempo real</li>
+      </ul>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b style="color: var(--color-success);">✓</b> Velocidad</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0;"><b style="color: var(--color-danger);">✗</b> No conecta brokers</p>
     </div>
+    
+    <div style="flex: 1; background: linear-gradient(180deg, #D1FAE5 0%, #6EE7B7 100%); padding: var(--space-sm); border-radius: 12px;">
+      <h2 style="font-size: var(--size-md); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold; text-align: center;">🤖 METATRADER</h2>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; text-align: center; font-style: italic;">Motor de Ejecución 24/7</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-xs) 0;"><b>Mejor para:</b> FASE 2 + FASE 5</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b>Funciones:</b></p>
+      <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: 0; padding-left: 20px;">
+        <li>Backtesting realista</li>
+        <li>Expert Advisors (EAs)</li>
+        <li>Optimización integrada</li>
+      </ul>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b style="color: var(--color-success);">✓</b> Trading automatizado</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0;"><b style="color: var(--color-danger);">✗</b> MQL5 limitado</p>
+    </div>
+    
+    <div style="flex: 1; background: linear-gradient(180deg, #EDE9FE 0%, #C4B5FD 100%); padding: var(--space-sm); border-radius: 12px;">
+      <h2 style="font-size: var(--size-md); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold; text-align: center;">🏦 INTERACTIVE BROKERS</h2>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; text-align: center; font-style: italic;">Puente al Mercado Real</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-xs) 0;"><b>Mejor para:</b> FASE 4 + FASE 5</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b>Funciones:</b></p>
+      <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: 0; padding-left: 20px;">
+        <li>Mercados globales (150+)</li>
+        <li>Paper trading realista</li>
+        <li>API Python profesional</li>
+      </ul>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b style="color: var(--color-success);">✓</b> Múltiples mercados</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0;"><b style="color: var(--color-danger);">✗</b> Curva aprendizaje</p>
+    </div>
+  </div>
+  
+  <div style="background: var(--color-warning); padding: var(--space-xs); border-radius: 8px; margin-top: var(--space-xs); text-align: center;">
+    <p style="font-size: var(--size-xs); color: var(--color-white); margin: 0; font-weight: bold;">💡 Ninguna herramienta hace TODO. Por eso aprenderemos las 3</p>
+  </div>
 </body>
 </html>
