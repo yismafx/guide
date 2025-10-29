@@ -1,63 +1,57 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slide 4</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 60px;
-            margin: 0;
-        }
-        h1 {
-            color: #667eea;
-            font-size: 42px;
-            margin-bottom: 30px;
-        }
-        .grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 30px;
-            margin-top: 40px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-        .card h3 {
-            color: #764ba2;
-            margin-top: 0;
-            font-size: 28px;
-        }
-        .card p {
-            font-size: 22px;
-            line-height: 1.5;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-neutral: #6B7280;
+  --color-dark: #1E293B;
+  --color-light: #F1F5F9;
+  --color-white: #FFFFFF;
+  --font-primary: Arial, sans-serif;
+  --size-xl: 48px;
+  --size-lg: 36px;
+  --size-md: 24px;
+  --size-sm: 18px;
+  --size-xs: 14px;
+  --space-xl: 60px;
+  --space-lg: 40px;
+  --space-md: 24px;
+  --space-sm: 16px;
+  --space-xs: 8px;
+}
+  </style>
 </head>
-<body>
-    <h1>Componentes del Trading Algorítmico</h1>
-    <div class="grid">
-        <div class="card">
-            <h3>📊 Datos</h3>
-            <p>Información histórica y en tiempo real de los mercados</p>
-        </div>
-        <div class="card">
-            <h3>🧠 Estrategia</h3>
-            <p>Reglas y lógica para tomar decisiones de trading</p>
-        </div>
-        <div class="card">
-            <h3>⚡ Ejecución</h3>
-            <p>Sistema que envía órdenes al mercado</p>
-        </div>
-        <div class="card">
-            <h3>📈 Backtesting</h3>
-            <p>Prueba de la estrategia con datos históricos</p>
-        </div>
-    </div>
+<body style="width: 960px; height: 540px; margin: 0; padding: 30px 40px 40px 40px; background: var(--color-white); font-family: var(--font-primary);">
+  <h1 style="font-size: 32px; color: var(--color-primary); margin: 0 0 16px 0; font-weight: bold;">📊 FASE 1: INVESTIGACIÓN & DISEÑO</h1>
+  
+  <div style="background: #DBEAFE; padding: 12px; border-radius: 8px; margin-bottom: 12px; border-left: 4px solid var(--color-primary);">
+    <p style="font-size: 14px; color: var(--color-dark); margin: 0;"><b>Trading Manual:</b> "Paso horas mirando gráficos"</p>
+    <p style="font-size: 14px; color: var(--color-dark); margin: 6px 0 0 0;"><b>Trading Algorítmico:</b> "Formalizo patrones en reglas medibles"</p>
+  </div>
+
+  <h3 style="font-size: 18px; color: var(--color-dark); margin: 0 0 8px 0; font-weight: bold;">¿Qué ocurre aquí?</h3>
+  <ul style="font-size: 15px; color: var(--color-dark); margin: 0 0 12px 0; padding-left: 20px;">
+    <li style="margin: 4px 0;">Idear hipótesis de trading</li>
+    <li style="margin: 4px 0;">Visualizar datos históricos</li>
+    <li style="margin: 4px 0;">Diseñar reglas de entrada/salida</li>
+    <li style="margin: 4px 0;">Definir gestión de riesgo</li>
+  </ul>
+
+  <div style="background: var(--color-light); padding: 12px; border-radius: 8px; margin-bottom: 12px;">
+    <p style="font-size: 14px; color: var(--color-dark); margin: 0;"><b>Ejemplo:</b> "Bitcoin rebota cuando toca banda inferior Bollinger Y RSI < 30. ¿Es consistente?"</p>
+  </div>
+
+  <div style="background: #FEE2E2; padding: 12px; border-radius: 8px; margin-bottom: 12px; border-left: 4px solid var(--color-danger);">
+    <p style="font-size: 14px; color: var(--color-danger); margin: 0; font-weight: bold;">⚠️ Trampa Común:</p>
+    <p style="font-size: 14px; color: var(--color-dark); margin: 6px 0 0 0;">Confundir "vi un patrón 3 veces" con "tengo una estrategia"</p>
+  </div>
+
+  <p style="font-size: 14px; color: var(--color-neutral); margin: 0;"><b>Herramienta:</b> 🔧 TradingView</p>
 </body>
 </html>
