@@ -1,55 +1,72 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slide 11</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #ffffff;
-            color: #333;
-            padding: 60px;
-            margin: 0;
-        }
-        h1 {
-            color: #764ba2;
-            font-size: 42px;
-            margin-bottom: 30px;
-        }
-        .content {
-            font-size: 26px;
-            line-height: 1.7;
-        }
-        .highlight-box {
-            background-color: #e7f3ff;
-            border-left: 6px solid #2196F3;
-            padding: 30px;
-            margin: 30px 0;
-        }
-        .highlight-box h2 {
-            color: #1976D2;
-            margin-top: 0;
-            font-size: 32px;
-        }
-        ul {
-            font-size: 24px;
-            line-height: 1.8;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-neutral: #6B7280;
+  --color-dark: #1E293B;
+  --color-light: #F1F5F9;
+  --color-white: #FFFFFF;
+  --font-primary: Arial, sans-serif;
+  --size-xl: 48px;
+  --size-lg: 36px;
+  --size-md: 24px;
+  --size-sm: 18px;
+  --size-xs: 14px;
+  --space-xl: 60px;
+  --space-lg: 40px;
+  --space-md: 24px;
+  --space-sm: 16px;
+  --space-xs: 8px;
+}
+  </style>
 </head>
-<body>
-    <h1>Machine Learning en Trading</h1>
-    <div class="content">
-        <div class="highlight-box">
-            <h2>🤖 Aplicaciones de ML</h2>
-            <ul>
-                <li>Predicción de precios (Regresión)</li>
-                <li>Clasificación de tendencias (Alcista/Bajista)</li>
-                <li>Detección de anomalías</li>
-                <li>Clustering de patrones de mercado</li>
-                <li>Reinforcement Learning para estrategias adaptativas</li>
-            </ul>
-        </div>
-    </div>
+<body style="width: 960px; height: 540px; margin: 0; padding: var(--space-lg); background: var(--color-white); font-family: var(--font-primary);">
+  <h1 style="font-size: var(--size-lg); color: var(--color-primary); margin: 0 0 var(--space-md) 0; font-weight: bold;">ROADMAP DEL WORKSHOP (16 SESIONES)</h1>
+  
+  <div style="display: grid; grid-template-columns: 1fr 2fr 3fr; gap: var(--space-xs); font-size: var(--size-xs);">
+    <div style="background: var(--color-primary); color: var(--color-white); padding: var(--space-xs); border-radius: 4px; font-weight: bold;">Sesiones</div>
+    <div style="background: var(--color-primary); color: var(--color-white); padding: var(--space-xs); border-radius: 4px; font-weight: bold;">Módulos</div>
+    <div style="background: var(--color-primary); color: var(--color-white); padding: var(--space-xs); border-radius: 4px; font-weight: bold;">Qué Aprenderás</div>
+    
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">1-3</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">IA Generativa + Fundamentos</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Cómo "hablar" con IA para generar código</div>
+    
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">4-5</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Herramientas (TradingView, MT, IB)</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Setup completo de tu ecosistema</div>
+    
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">6-7</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Estrategia Principal (Mean Reversion)</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Desarrollo completo: Python + Pine + MQL5</div>
+    
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">8-10</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Validación, Riesgo, Optimización</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Asegurar que tu estrategia es robusta</div>
+    
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">11-13</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Técnicas Avanzadas</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Análisis de sentimiento, deployment</div>
+    
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">14-15</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Mini-Estrategias + Aspectos Profesionales</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Portfolio, regulaciones, psicología</div>
+    
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">16</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Proyecto Final</div>
+    <div style="background: var(--color-light); padding: var(--space-xs); border-radius: 4px;">Consolidar todo lo aprendido</div>
+  </div>
+  
+  <div style="background: linear-gradient(90deg, var(--color-primary) 0%, var(--color-secondary) 100%); padding: var(--space-md); border-radius: 8px; margin-top: var(--space-md); text-align: center;">
+    <p style="font-size: var(--size-sm); color: var(--color-white); margin: 0; font-weight: bold;">💡 Hilo Conductor</p>
+    <p style="font-size: var(--size-xs); color: var(--color-white); margin: var(--space-xs) 0;">Estrategia Mean Reversion se desarrolla progresivamente a través de las sesiones</p>
+  </div>
 </body>
 </html>
