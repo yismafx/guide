@@ -1,61 +1,68 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Slide 7</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 60px;
-            margin: 0;
-        }
-        h1 {
-            color: #667eea;
-            font-size: 42px;
-            margin-bottom: 30px;
-        }
-        .steps {
-            counter-reset: step-counter;
-            list-style: none;
-            padding: 0;
-        }
-        .steps li {
-            counter-increment: step-counter;
-            margin-bottom: 30px;
-            padding-left: 80px;
-            position: relative;
-            font-size: 26px;
-        }
-        .steps li:before {
-            content: counter(step-counter);
-            position: absolute;
-            left: 0;
-            top: 0;
-            background: #667eea;
-            color: white;
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 24px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <style>
+:root {
+  --color-primary: #2563EB;
+  --color-secondary: #7C3AED;
+  --color-success: #10B981;
+  --color-danger: #EF4444;
+  --color-warning: #F59E0B;
+  --color-neutral: #6B7280;
+  --color-dark: #1E293B;
+  --color-light: #F1F5F9;
+  --color-white: #FFFFFF;
+  --font-primary: Arial, sans-serif;
+  --size-xl: 48px;
+  --size-lg: 36px;
+  --size-md: 24px;
+  --size-sm: 18px;
+  --size-xs: 14px;
+  --space-xl: 60px;
+  --space-lg: 40px;
+  --space-md: 24px;
+  --space-sm: 16px;
+  --space-xs: 8px;
+}
+  </style>
 </head>
-<body>
-    <h1>Proceso de Desarrollo de Estrategias</h1>
-    <ul class="steps">
-        <li>Definir la hipótesis de trading</li>
-        <li>Recopilar y preparar los datos</li>
-        <li>Implementar la estrategia en código</li>
-        <li>Realizar backtesting riguroso</li>
-        <li>Optimizar parámetros</li>
-        <li>Validar en datos fuera de muestra</li>
-        <li>Implementar en entorno real (paper trading)</li>
+<body style="width: 960px; height: 540px; margin: 0; padding: var(--space-lg); background: var(--color-white); font-family: var(--font-primary);">
+  <h1 style="font-size: var(--size-lg); color: var(--color-warning); margin: 0 0 var(--space-md) 0; font-weight: bold;">📝 FASE 4: PAPER TRADING</h1>
+  
+  <div style="background: #FEF3C7; padding: var(--space-sm); border-radius: 8px; margin-bottom: var(--space-sm); border-left: 4px solid var(--color-warning);">
+    <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0;"><b>Trading Manual:</b> "Cuenta demo para practicar sin arriesgar dinero"</p>
+    <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;"><b>Trading Algorítmico:</b> "Probar el bot con datos REALES en tiempo real, sin riesgo"</p>
+  </div>
+
+  <h3 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold;">¿Qué ocurre aquí?</h3>
+  <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: 0 0 var(--space-sm) 0; padding-left: 20px;">
+    <li style="margin: var(--space-xs) 0;">El bot corre durante semanas/meses con datos del mercado EN VIVO</li>
+    <li style="margin: var(--space-xs) 0;">Ejecuta operaciones "de mentira" (simuladas)</li>
+  </ul>
+
+  <div style="background: var(--color-light); padding: var(--space-sm); border-radius: 8px; margin-bottom: var(--space-sm);">
+    <p style="font-size: var(--size-xs); color: var(--color-dark); margin: 0; font-weight: bold;">CRÍTICO: Detectar problemas que el backtesting NO muestra:</p>
+    <ul style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0; padding-left: 20px;">
+      <li style="margin: var(--space-xs) 0;">Bugs en el código</li>
+      <li style="margin: var(--space-xs) 0;">Slippage real vs modelado</li>
+      <li style="margin: var(--space-xs) 0;">Latencia (tiempo entre señal y ejecución)</li>
     </ul>
+  </div>
+
+  <div class="row" style="display: flex; gap: var(--space-md);">
+    <div style="flex: 1;">
+      <h3 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold;">Backtest</h3>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Modelo perfecto del pasado</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Asume ejecución instantánea</p>
+    </div>
+    <div style="flex: 1;">
+      <h3 style="font-size: var(--size-sm); color: var(--color-dark); margin: 0 0 var(--space-xs) 0; font-weight: bold;">Paper Trading</h3>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Mundo real desordenado</p>
+      <p style="font-size: var(--size-xs); color: var(--color-dark); margin: var(--space-xs) 0;">Ordenes pueden no ejecutarse</p>
+    </div>
+  </div>
+
+  <p style="font-size: var(--size-xs); color: var(--color-neutral); margin: var(--space-sm) 0 0 0;"><b>Herramienta:</b> 🔧 Interactive Brokers Paper Trading</p>
 </body>
 </html>
